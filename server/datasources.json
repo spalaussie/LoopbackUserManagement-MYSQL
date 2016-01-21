@@ -1,0 +1,28 @@
+{
+  "db": {
+    "host": "localhost",
+    "database": "sampledb",
+    "name": "db",
+    "connector": "mysql",
+    "user": "root"
+  },
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "realemail@gmail.com",
+          "pass": "realpassword"
+        }
+      }
+    ]
+  }
+}
